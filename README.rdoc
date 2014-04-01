@@ -1,0 +1,20 @@
+=My Gists
+
+
+===Wykorzystane gemy:
+
+* gem 'pygments.rb'
+* gem 'redcarpet'
+* gem 'quiet_assets'
+* gem 'will_paginate'
+* gem 'bootstrap-sass'
+
+
+===Link do aplikacji na Heroku: 
+http://mojegisty.herokuapp.com/
+
+===Co zrobiłem:
+
+* Do css wykorzystałem bootstrapa z pomocą gemu 'bootstrap-sass'
+* Paginacja z wykorzystaniem 'will_paginate'
+* Kolorowanie składni z pomocą pygments.rb

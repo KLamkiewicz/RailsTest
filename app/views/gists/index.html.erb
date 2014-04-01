@@ -1,0 +1,34 @@
+
+
+<div class="header bg-primary">
+	<a href="/gists" class="btn btn-primary btn-lg active" role="button"> Main Page</a>
+	<a href="https://github.com/KLamkiewicz/RubyGist" class="btn btn-primary btn-lg active" role="button"> Github</a>
+
+	<form class="navbar-form navbar-right"  role="form">
+				 Description
+                <%= form_tag gists_path, :method => 'get' do %>    
+                 <%= (text_field_tag  :search, params[:search], class:'form-control') %>
+                <%= submit_tag "Search", class:'btn btn-warning' , :name => nil, :onclick => "$( document ).ready;"%>
+               
+               
+                <% end %>
+                
+	</form>
+</div>
+
+<div style="padding-top:150px; text-align: center; font-size: 60px;"> My gists</div>
+<%= link_to 'New Gist', new_gist_path, class:'btn btn-success btn-lg' %>
+
+<div class="main center-block bg-info">
+
+<div class="gists">	
+<table class="table table-bordered">
+	<%= render :partial => 'gist', :collection => @gists %>
+</table>
+</div>
+
+
+
+
+</div>
+
